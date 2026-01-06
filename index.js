@@ -51,11 +51,13 @@ form.addEventListener('submit', async (e) => {
       form.reset();
       feedback.textContent = 'Mensagem enviada com sucesso! Entrarei em contato em breve.';
       feedback.classList.add('sucesso');
+      feedback?.classList.remove('display-none');
     } else {
       throw new Error('Erro no envio');
     }
   } catch (error) {
     feedback.textContent = 'Não foi possível enviar a mensagem. Tente novamente mais tarde.';
     feedback.classList.add('erro');
+    feedback?.classList.remove('display-none');
   }
 });
