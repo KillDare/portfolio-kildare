@@ -5,7 +5,6 @@ com foco em **layout responsivo**, **acessibilidade** e **boas práticas de fron
 
 🚀 **Portfólio online:**  
 👉 [Acessar portfólio](https://killdare.github.io/portfolio-kildare/)
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-online-success)](https://killdare.github.io/portfolio-kildare/)
 
 ---
 
