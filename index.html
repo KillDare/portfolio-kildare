@@ -201,44 +201,50 @@
                 <h1 class="titulo">Contato</h1>
 
                 <form 
-                    action="mailto:kildarealves@outlook.com" method="post" enctype="text/plain"
-                    class="form-contato" autocomplete="off">
-                    <div class="campo">
-                        <label for="nome">Nome</label>
-                        <input
-                            type="text"
-                            id="nome"
-                            name="nome"
-                            placeholder="Seu nome completo"
-                            required
-                        >
-                    </div>
+                action="https://formspree.io/f/xrebnzwr"
+                method="POST"
+                class="form-contato"
+                autocomplete="off"
+                id="form-contato"
+                >
+                <div class="campo">
+                    <label for="nome">Nome</label>
+                    <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Seu nome completo"
+                    required
+                    >
+                </div>
 
-                    <div class="campo">
-                        <label for="email">E-mail</label>
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            placeholder="seuemail@email.com"
-                            required
-                        >
-                    </div>
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="seuemail@email.com"
+                    required
+                    >
+                </div>
 
-                    <div class="campo">
-                        <label for="mensagem">Mensagem</label>
-                        <textarea
-                            id="mensagem"
-                            name="mensagem"
-                            placeholder="Escreva sua mensagem..."
-                            rows="5"
-                            required
-                        ></textarea>
-                    </div>
+                <div class="campo">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea
+                    id="mensagem"
+                    name="mensagem"
+                    placeholder="Escreva sua mensagem..."
+                    rows="5"
+                    required
+                    ></textarea>
+                </div>
 
-                    <button type="submit" class="btn-principal">
-                        Enviar mensagem
-                    </button>
+                <button type="submit" class="btn-principal">
+                    Enviar mensagem
+                </button>
+
+                <p class="form-feedback" aria-live="polite"></p>
                 </form>
             </section>
         </div>

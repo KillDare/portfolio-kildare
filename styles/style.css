@@ -393,6 +393,19 @@ section {
     align-self: flex-end;
 }
 
+.form-feedback {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  min-height: 1.2em;
+}
+
+.form-feedback.sucesso {
+  color: #2ecc71;
+}
+
+.form-feedback.erro {
+  color: #e74c3c;
+}
 
 
 /* ==================================================
