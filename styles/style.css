@@ -1,0 +1,542 @@
+/* ==================================================
+   VARIÁVEIS GLOBAIS
+================================================== */
+:root {
+    --cor-principal: #f0f0f0;
+    --cor-fundo: #382000;
+    --cor-fundo2: #99713D;
+    --cor-fundo3: #664314;
+    --cor-ativo: #CCA97A;
+}
+
+/* ==================================================
+   RESET / BASE
+================================================== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--cor-fundo2);
+    color: var(--cor-fundo);
+}
+html {
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+/* ==================================================
+   LAYOUT – CABEÇALHO
+================================================== */
+.cabecalho {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+
+    width: 100%;
+    height: 80px;
+    padding: 0 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--cor-fundo);
+    color: var(--cor-principal);
+}
+
+.logo{
+    width: 20%;
+}
+
+.nav{
+    height: 100%; 
+    width: 80%;
+}
+
+/* ==================================================
+   MENU SUPERIOR
+================================================== */
+.menu-sup {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+}
+
+.menu-sup-item {
+    margin: 0 10px;
+}
+
+.menu-sup-item a {
+    display: inline-block;
+    font-size: 1.25rem;
+    color: var(--cor-principal);
+
+    transition: color 0.3s ease;
+}
+
+.traco {
+    width: 0%;
+    height: 2px;
+    background-color: currentColor;
+
+    transition: width 0.4s ease;
+}
+
+.menu-sup-item a:hover > .traco {
+    width: 100%;
+}
+
+.menu-sup-item a:focus-visible {
+    outline: 2px solid var(--cor-ativo);
+    outline-offset: 4px;
+}
+
+.menu-sup-item-ativo a {
+    color: var(--cor-ativo);
+}
+
+/* ==================================================
+   CONTEÚDO PRINCIPAL
+================================================== */
+.corpo {
+    width: 100%;
+    padding: 80px 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 1024px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* ==================================================
+   GRID / FLEX
+================================================== */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row > div {
+    flex: 1;
+    width: auto;
+}
+
+.col{
+    display: flex;
+    flex-direction: row;
+}
+
+/* ==================================================
+   IMAGENS
+================================================== */
+.img-content {
+    width: auto;
+}
+.img-auto{
+  width: 90%;
+  height: 90%;
+  object-fit: cover;     
+}
+
+.img-media {
+    width: 300px;
+}
+
+.img-pequena {
+    width: 100px;
+}
+
+/* ==================================================
+   SEÇÕES
+================================================== */
+section {
+    min-height: calc(100svh - 80px);
+    scroll-margin-top: 80px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ==================================================
+   TEXTOS
+================================================== */
+.saudacao {
+    font-size: 3rem;
+    color: var(--cor-fundo);
+}
+
+.titulo {
+    font-size: 3rem;
+    color: var(--cor-principal);
+    text-decoration: underline;
+}
+
+/* ==================================================
+   BOTÕES
+================================================== */
+.btn-principal {
+    padding: 8px 16px;
+
+    font-size: 1.5rem;
+    cursor: pointer;
+
+    background-color: var(--cor-fundo);
+
+    border: none;
+    border-radius: 8px;
+    color: var(--cor-principal);
+
+    transition: color 0.3s ease;
+}
+
+.btn-principal a {
+    color: var(--cor-principal);
+
+    transition: color 0.3s ease;
+}
+
+.btn-principal:hover a, .btn-principal:hover {
+    color: var(--cor-ativo);
+}
+
+
+/* ==================================================
+   SAUDAÇÃO
+================================================== */
+
+.subtitulo {
+    font-size: 1.5rem;
+    color: var(--cor-ativo);
+    font-weight: 500;
+}
+
+.hero-descricao {
+    max-width: 420px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #f2f2f2;
+}
+
+.destaque {
+    color: var(--cor-principal);
+}
+
+
+/* ==================================================
+   HABILIDADES
+================================================== */
+
+#habilidades > div {
+    max-width: 1024px;
+    width: 100%;
+    padding: 20px;
+}
+
+.habilidades {
+    background-color: var(--cor-fundo3);
+    border: none;
+    border-radius: 12px;
+    color: var(--cor-principal);
+
+    padding: 20px;
+    margin-bottom: 20px;
+
+    display: flex;
+    gap: 16px;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,.15);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.habilidades:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0,0,0,.25);
+}
+.habilidades h2 {
+    margin: 0;
+}
+.habilidades > i {
+    width: 60px;
+    font-size: 3.5rem;
+    color: var(--cor-ativo);
+}
+.habilidades p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 6px 0 12px;
+    color: #f5f5f5;
+}
+
+.dados{
+    width: calc(90% - 60px);
+}
+
+.barra-status {
+    width: 100%;
+    height: 11px;
+    background-color: rgba(0,0,0,.3);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.barra-preenchida {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        var(--cor-ativo),
+        var(--cor-principal)
+    );
+    border-radius: 20px;
+    width: 0;
+    animation: carregar 1.5s ease forwards;
+}
+.barra-preenchida::after {
+    content: attr(data-nivel);
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: rgba(0,0,0,.6);
+    pointer-events: none;
+}
+
+@keyframes carregar {
+    to {
+        width: var(--nivel);
+    }
+}
+
+
+/* ==================================================
+   CONTATO
+================================================== */
+
+#contato {
+    gap: 30px;
+}
+
+.form-contato {
+    width: 100%;
+    max-width: 480px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    background-color: var(--cor-fundo3);
+    padding: 30px;
+    border-radius: 16px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.25);
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.campo label {
+    font-size: 0.9rem;
+    color: var(--cor-principal);
+}
+
+.campo input,
+.campo textarea {
+    padding: 12px 14px;
+    font-size: 1rem;
+
+    border-radius: 8px;
+    border: none;
+    outline: none;
+
+    background-color: var(--cor-principal);
+    color: var(--cor-fundo);
+}
+
+.campo input::placeholder,
+.campo textarea::placeholder {
+    color: #666;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+    outline: 2px solid var(--cor-ativo);
+}
+
+.form-contato button {
+    align-self: flex-end;
+}
+
+
+
+/* ==================================================
+   LAYOUT – RODAPÉ
+================================================== */
+
+.rodape {
+    width: 100%;
+    background-color: var(--cor-fundo);
+    color: var(--cor-principal);
+
+    padding: 40px 0 0 0px;
+}
+
+.rodape-conteudo {
+    max-width: 1024px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    text-align: center;
+}
+
+.rodape-identidade h2 {
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+.rodape-identidade p {
+    margin: 4px 0 0;
+    font-size: 0.9rem;
+    color: var(--cor-ativo);
+}
+
+.redes {
+    display: flex;
+    gap: 20px;
+}
+
+.redes a {
+    font-size: 2rem;
+    color: var(--cor-principal);
+
+    transition: transform .3s ease, color .3s ease;
+}
+
+.redes a:hover {
+    color: var(--cor-ativo);
+    transform: translateY(-4px);
+}
+
+.rodape-copy p {
+    font-size: 0.85rem;
+    opacity: .8;
+}
+
+
+/* ==================================================
+   RESPONSIVO – MOBILE
+================================================== */
+@media (max-width: 768px) {
+
+    /* HEADER */
+    .cabecalho {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .menu-sup {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu-sup-item {
+        margin: 5px 8px;
+    }
+
+    /* CONTEÚDO */
+    .corpo {
+        margin: 100px 10px;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row > div {
+        width: 100%;
+        text-align: center;
+    }
+
+    .habilidades {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .habilidades > i {
+        width: auto;
+    }
+
+    /* IMAGENS */
+    .img-media {
+        width: 220px;
+        margin-top: 20px;
+    }
+
+    .img-auto {
+        width: 100%;
+        height: auto;
+    }
+
+    /* TEXTOS */
+    .saudacao {
+        font-size: 2.2rem;
+    }
+
+    .titulo {
+        font-size: 2.2rem;
+    }
+
+    /* BOTÃO */
+    .btn-principal {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+
+    /* CONTATO */
+    .form-contato button {
+        align-self: stretch;
+        text-align: center;
+    }
+
+    /* FOOTER */
+    .rodape {
+        height: auto;
+        padding: 20px 10px;
+        text-align: center;
+    }
+}
