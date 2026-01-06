@@ -1,12 +1,15 @@
-# Portfólio – Kildare Alves
+# 💼 Portfólio – Kildare Alves
 
-Portfólio pessoal desenvolvido com HTML, CSS e JavaScript,
-com foco em layout responsivo, acessibilidade e boas práticas.
+Portfólio pessoal desenvolvido com **HTML, CSS e JavaScript**,
+com foco em **layout responsivo**, **acessibilidade** e **boas práticas de front-end**.
+
+🚀 **Portfólio online:**  
+👉 [Acessar portfólio](https://killdare.github.io/portfolio-kildare/)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-online-success)](https://killdare.github.io/portfolio-kildare/)
+
+---
 
 ## 🛠️ Tecnologias
 - HTML5
 - CSS3
 - JavaScript
-
-## 🚀 Acesso
-Em breve via GitHub Pages.
