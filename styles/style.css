@@ -12,10 +12,13 @@
 /* ==================================================
    RESET / BASE
 ================================================== */
+*{
+    font-family: "Roboto", sans-serif;
+}
+
 body {
     margin: 0;
     padding: 0;
-    font-family: "Roboto", sans-serif;
     background-color: var(--cor-fundo2);
     color: var(--cor-fundo);
 }
