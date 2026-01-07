@@ -341,7 +341,7 @@ section {
 }
 
 .form-contato {
-    width: 100%;
+    width: calc(100% - 60px);
     max-width: 480px;
 
     display: flex;
