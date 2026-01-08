@@ -303,16 +303,19 @@ section {
     position: relative;
     z-index: 1;
     height: 100%;
-   
-    --c1: var(--cor-ativo);
-    --c2: var(--cor-principal);
-    background: linear-gradient(90deg, var(--c1), var(--c2));
-    
-   border-radius: 20px;
     width: 0;
-    animation: 
-       carregar 1.5s ease forwards,
-       trocar-cores 3s ease-in-out infinite;
+
+    background: linear-gradient(
+        90deg,
+        var(--cor-ativo),
+        var(--cor-principal)
+    );
+
+    border-radius: 20px;
+
+    animation:
+        carregar 1.5s ease forwards,
+        fluxo-cor 12s linear infinite;
 }
 .barra-preenchida::after {
     content: attr(data-nivel);
@@ -332,21 +335,13 @@ section {
         width: var(--nivel);
     }
 }
-@keyframes pulsar-cores {
-@keyframes trocar-cores {
-    0% {
-        --c1: var(--cor-ativo);
-        --c2: var(--cor-principal);
+@keyframes fluxo-cor {
+    from {
+        filter: hue-rotate(0deg);
     }
-    50% {
-        --c1: var(--cor-principal);
-        --c2: var(--cor-ativo);
+    to {
+        filter: hue-rotate(360deg);
     }
-    100% {
-        --c1: var(--cor-ativo);
-        --c2: var(--cor-principal);
-    }
-}
 }
 
 
