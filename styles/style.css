@@ -308,9 +308,11 @@ section {
         var(--cor-ativo),
         var(--cor-principal)
     );
-    border-radius: 20px;
-    width: 0;
-    animation: carregar 1.5s ease forwards;
+   border-radius: 20px;
+   width: 0;
+   animation: 
+      carregar 1.5s ease forwards,
+      pulsar-cores 2.5s ease-in-out infinite;
 }
 .barra-preenchida::after {
     content: attr(data-nivel);
@@ -328,6 +330,31 @@ section {
 @keyframes carregar {
     to {
         width: var(--nivel);
+    }
+}
+@keyframes pulsar-cores {
+    0% {
+        background: linear-gradient(
+            90deg,
+            var(--cor-ativo),
+            var(--cor-principal)
+        );
+    }
+
+    50% {
+        background: linear-gradient(
+            90deg,
+            var(--cor-principal),
+            var(--cor-ativo)
+        );
+    }
+
+    100% {
+        background: linear-gradient(
+            90deg,
+            var(--cor-ativo),
+            var(--cor-principal)
+        );
     }
 }
 
