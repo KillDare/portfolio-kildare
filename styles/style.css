@@ -308,14 +308,16 @@ section {
     background: linear-gradient(
         90deg,
         var(--cor-ativo),
-        var(--cor-principal)
+        var(--cor-principal),
+        var(--cor-ativo)
     );
+    background-size: 200% 100%;
 
     border-radius: 20px;
 
     animation:
         carregar 1.5s ease forwards,
-        fluxo-cor 12s linear infinite;
+        gradiente-movel 2s linear infinite;
 }
 .barra-preenchida::after {
     content: attr(data-nivel);
@@ -335,15 +337,14 @@ section {
         width: var(--nivel);
     }
 }
-@keyframes fluxo-cor {
-    from {
-        filter: hue-rotate(0deg);
+@keyframes gradiente-movel {
+    0% {
+        background-position: 0% 50%;
     }
-    to {
-        filter: hue-rotate(360deg);
+    100% {
+        background-position: 200% 50%;
     }
 }
-
 
 /* ==================================================
    CONTATO
