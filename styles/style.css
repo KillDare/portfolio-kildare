@@ -134,11 +134,7 @@ a{
     flex-wrap: wrap;
 }
 
-<<<<<<< HEAD
 .row > div, .row > .projeto {
-=======
-.row > div {
->>>>>>> 6238aaa30ecde1ca902ce112ff4935c8606d7404
     flex: 1;
     width: auto;
 }
@@ -353,8 +349,6 @@ section {
 /* ==================================================
    CONTATO
 ================================================== */
-
-<<<<<<< HEAD
 .row-projetos {
     justify-content: center;
     width: 100%;
@@ -429,8 +423,6 @@ section {
    CONTATO
 ================================================== */
 
-=======
->>>>>>> 6238aaa30ecde1ca902ce112ff4935c8606d7404
 #contato {
     gap: 30px;
 }
@@ -596,11 +588,8 @@ section {
         align-items: center;
     }
 
-<<<<<<< HEAD
     .row > div, .row > .projeto{
-=======
-    .row > div {
->>>>>>> 6238aaa30ecde1ca902ce112ff4935c8606d7404
+
         width: 100%;
         text-align: center;
     }
