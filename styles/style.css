@@ -134,7 +134,11 @@ a{
     flex-wrap: wrap;
 }
 
+<<<<<<< HEAD
+.row > div, .row > .projeto {
+=======
 .row > div {
+>>>>>>> 6238aaa30ecde1ca902ce112ff4935c8606d7404
     flex: 1;
     width: auto;
 }
@@ -350,6 +354,83 @@ section {
    CONTATO
 ================================================== */
 
+<<<<<<< HEAD
+.row-projetos {
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.row > .projeto {
+    position: relative;
+    min-width: 256px;
+    min-height: 192px;
+
+    cursor: pointer;
+
+    border-radius: 12px;
+    overflow: hidden;
+
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    
+    text-decoration: none;
+    color: inherit;
+}
+
+.projeto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 28px rgba(0,0,0,.25);
+}
+
+.projeto::after {
+  content: "Ver no GitHub";
+  position: absolute;
+  z-index: 3;
+  bottom: 12px;
+  left: 12px;
+
+  font-size: 0.85rem;
+  color: #fff;
+  opacity: 0;
+
+  transition: opacity 0.3s ease;
+}
+.projeto:hover::after {
+  opacity: 1;
+}
+
+.projeto img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-base {
+    z-index: 1;
+}
+
+.img-top {
+    z-index: 2;
+    animation: fade 21s ease-in-out infinite;
+}
+
+@keyframes fade {
+    0%   { opacity: 1; }
+    50%  { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+
+/* ==================================================
+   CONTATO
+================================================== */
+
+=======
+>>>>>>> 6238aaa30ecde1ca902ce112ff4935c8606d7404
 #contato {
     gap: 30px;
 }
@@ -515,7 +596,11 @@ section {
         align-items: center;
     }
 
+<<<<<<< HEAD
+    .row > div, .row > .projeto{
+=======
     .row > div {
+>>>>>>> 6238aaa30ecde1ca902ce112ff4935c8606d7404
         width: 100%;
         text-align: center;
     }
